@@ -1,0 +1,77 @@
+body {
+    background-image: linear-gradient(to right, rgb(69, 153, 202) , rgba(139, 207, 61, 0.589), rgb(128, 85, 153));
+    /*justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;*/
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 70px;
+    margin: 20px;
+    padding: 50px;
+    top: 20%;
+}
+
+h2 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    font-size: 35px;
+}
+
+#username, #password {
+    font-size: 25px;
+}
+
+#user-box, #pass-box {
+    font-size: 20px;
+}
+
+#sign-btn {
+    font-size: 22px;
+}
+
+.p1 .p2 {
+    font-size: 15px;
+}
+
+.frm {
+    width: 30%;
+    height: auto;
+    border: none;
+    box-shadow: 0 15px 30px 30px rgba(214, 105, 15, 0.2);
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .frm {
+      width: 90%; /* Adjust as needed */
+    }
+  
+    #username, #password {
+        display: block;
+    }
+
+    h1 {
+        padding: 20px;
+        font-size: 55px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+      
+    .p1, .p2 {
+        text-align: center;
+        margin-top: 15px;
+    }      
+}
