@@ -1,0 +1,137 @@
+body {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+body::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url("scott-graham-OQMZwNd3ThU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+
+
+/*
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}*/
+  
+.regis-frm {
+    background-color: rgba(151, 186, 221, 0.404);
+    padding: 10px;
+    width: 500px;
+    margin: 5px;
+    height: auto;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0 15px 30px 30px rgba(255, 0, 0, 0.2);
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 51%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    overflow: hidden
+}
+
+label {
+    width: 150px;
+    margin-right: 10px;
+}
+
+input, button {
+    flex: 1;
+}
+  
+button {
+    margin-left: auto;
+}
+  
+h1 {
+    font-family: Abril Fatface;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+#first-name, #last-name, #email-address, #user-name, #create-pass, #cnfrm-pass {
+    font-size: 25px;
+}
+
+#first-box, #last-box, #user-mail, #user-box, #pass-box, #confrm-box {
+    font-size: 20px;
+}
+
+#regis-btn {
+    font-size: 22px;
+}
+
+p {
+    font-size: 23px;
+}
+
+@media (max-width: 768px) {
+    .regis-frm {
+      width: 90%;
+    }
+  
+    #first-name, #last-name, #email-address, #user-name, #create-pass, #cnfrm-pass {
+        display: block;
+    }
+
+    h1 {
+        padding: 20px;
+        font-size: 55px;
+    }
+      
+    p {
+        text-align: center;
+        margin-top: 15px;
+    }      
+}
+
+
+
+
+
+
+/*form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+label {
+    font-weight: bold;
+}
+  
+input, button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+  
+button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}*/

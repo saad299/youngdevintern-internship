@@ -1,0 +1,185 @@
+body {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+body::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url("scott-graham-OQMZwNd3ThU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+.regis-frm {
+    background-color: rgba(7, 131, 255, 0.404);
+    padding: 20px;
+    width: 700px;
+    height: auto;
+    border: none;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0 15px 30px 30px rgba(255, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+h1 {
+    font-family: Abril Fatface;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+label {
+    width: 150px;
+    margin-right: 10px;
+}
+
+input, button {
+    flex: 1;
+}
+  
+button {
+    margin-left: auto;
+}
+
+#first-name {
+    padding: 5px;
+    margin-left: -20px;
+}
+
+#last-name {
+    margin-left: 50px;
+    padding: 5px;
+    margin-right: -5px;
+}
+
+#email-address {
+    margin-left: 40px;
+}
+
+#user-mail {
+    margin-right: 10px;
+}
+
+#create-pass {
+    margin-right: 10px;
+    margin-left: -30px;
+}
+
+#first-box {
+    margin-right: 26px;
+}
+
+#cnfrm-pass {
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+#confrm-box {
+    margin-right: 15px;
+}
+
+#user-box {
+    margin-right: 30px;
+}
+
+#pass-box {
+    margin-right: 20px;
+}
+
+#first-box {
+    margin-right: 50px;
+}
+
+#first-box, #last-box, #user-mail, #user-box, #pass-box, #confrm-box {
+    font-size: 14px;
+}
+
+p {
+    font-size: 25px;
+}
+
+#regis-btn {
+    font-size: 20px;
+    color: #c42d2d;
+    cursor: pointer;
+}
+
+.regis-frm button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 740px) {
+    .regis-frm {
+        width: 60%; 
+        height: auto;
+        flex-direction: column; 
+        align-items: flex-start; 
+        text-align: center; 
+    }
+
+    h1 {
+        display: none;
+    }
+
+    input, button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #first-name, #user-name, #create-pass  {
+        text-align: center; 
+    }
+
+    #last-name {
+        margin-left: -35px;
+    }
+
+    #email-address {
+        margin-left: 10px;
+    }
+
+    #cnfrm-pass {
+        margin-left: -10px;
+    }
+
+    #first-box, #last-box, #user-mail, #user-box, #pass-box, #confrm-box {
+        font-size: 18px;
+    }
+
+    #first-name, #last-name, #email-address, #user-name, #create-pass, #cnfrm-pass {
+        font-size: 20px;
+    }
+
+    button {
+        margin-left: 0;
+    }
+
+    #regis-btn {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
